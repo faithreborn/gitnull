@@ -1,1 +1,155 @@
-bounjour masre beee
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitNull - Professional Git Flow CLI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .logo {
+            font-family: monospace;
+            white-space: pre;
+            font-size: clamp(0.5rem, 1vw, 1rem);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .description {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .install {
+            background: #fff;
+            color: #000;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+            display: inline-block;
+        }
+
+        .commands {
+            margin: 4rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .command {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: transform 0.2s;
+        }
+
+        .command:hover {
+            transform: translateY(-5px);
+        }
+
+        .command h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .command p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .command code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <pre class="logo">
+   ____ _ _   _   _       _ _ 
+  / ___(_) |_| \ | |_   _| | |
+ | |  _| | __|  \| | | | | | |
+ | |_| | | |_| |\  | |_| | | |
+  \____|_|\__|_| \_|\__,_|_|_|
+            </pre>
+            <h1>Professional Git Flow CLI</h1>
+            <p class="description">Streamline your Git workflow with an elegant and powerful command-line interface. Feature branches, releases, and synchronization made simple.</p>
+            <div class="install">npm install -g gitnull</div>
+        </section>
+
+        <section class="commands">
+            <div class="command">
+                <h3>Feature Management</h3>
+                <p>Start and finish feature branches with ease</p>
+                <code>gitnull start-feature &lt;name&gt;</code><br>
+                <code>gitnull finish-feature &lt;name&gt;</code>
+            </div>
+
+            <div class="command">
+                <h3>Release Control</h3>
+                <p>Manage releases with version control</p>
+                <code>gitnull start-release &lt;version&gt;</code><br>
+                <code>gitnull finish-release &lt;version&gt;</code>
+            </div>
+
+            <div class="command">
+                <h3>Sync Operations</h3>
+                <p>Keep your repository synchronized</p>
+                <code>gitnull push</code><br>
+                <code>gitnull sync</code>
+            </div>
+        </section>
+
+        <footer>
+            <p>GitNull &copy; 2024 - Streamline your Git workflow</p>
+        </footer>
+    </div>
+</body>
+</html>
