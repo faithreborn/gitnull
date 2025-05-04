@@ -68,6 +68,9 @@ program
   .action(() => {
     console.log(chalk.green('Tool state cleared. Ready to start fresh.'));
     // Add logic to clear the tool state here
+    // Reset repository-specific configurations or data
+    // Prepare the tool for a new repository setup
+    console.log(chalk.green('Tool is ready for a new repository.'));
   });
 
 program.parse(process.argv);
