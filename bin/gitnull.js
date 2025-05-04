@@ -7,6 +7,7 @@ import { startFeature, finishFeature } from '../lib/feature.js';
 import { startRelease, finishRelease } from '../lib/release.js';
 import { push, sync } from '../lib/sync.js';
 import { displayBanner } from '../lib/utils.js';
+import inquirer from 'inquirer';
 
 // Display banner
 displayBanner();
@@ -65,12 +66,24 @@ program
 program
   .command('clear')
   .description('Clear the tool state to start fresh')
-  .action(() => {
+  .action(async () => {
     console.log(chalk.green('Tool state cleared. Ready to start fresh.'));
     // Add logic to clear the tool state here
     // Reset repository-specific configurations or data
     // Prepare the tool for a new repository setup
     console.log(chalk.green('Tool is ready for a new repository.'));
+
+    // Prompt for new repository URL
+    const answers = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'repoUrl',
+        message: 'Enter the new repository URL:',
+      },
+    ]);
+
+    console.log(chalk.green(`New repository URL set to: ${answers.repoUrl}`));
+    // Logic to update the repository configuration with the new URL
   });
 
 program.parse(process.argv);
