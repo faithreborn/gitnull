@@ -1,29 +1,47 @@
 {
   "name": "gitnull",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Professional Git Flow CLI tool for streamlined workflow management",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "bin": {
+    "gitnull": "./bin/gitnull.js"
   },
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint .",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "git",
+    "workflow",
+    "cli",
+    "gitflow",
+    "version-control"
+  ],
+  "author": "GitNull Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/gitnull.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/gitnull/issues"
+  },
+  "homepage": "https://github.com/yourusername/gitnull#readme",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "chalk": "^5.4.1",
+    "colors": "^1.4.0",
+    "figlet": "^1.5.0",
+    "simple-git": "^2.47.0",
+    "inquirer": "^9.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@types/node": "^22.15.3",
+    "commander": "^13.1.0",
     "eslint": "^9.22.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.26.1",
-    "vite": "^6.3.1"
+    "typescript-eslint": "^8.26.1"
   }
 }
