@@ -8,6 +8,7 @@ import { startRelease, finishRelease } from '../lib/release.js';
 import { push, sync } from '../lib/sync.js';
 import { displayBanner } from '../lib/utils.js';
 import inquirer from 'inquirer';
+import fs from 'fs';
 
 // Display banner
 displayBanner();
@@ -84,8 +85,7 @@ program
 
     console.log(chalk.green(`New repository URL set to: ${answers.repoUrl}`));
     // Logic to update the repository configuration with the new URL
-    // Assuming there's a configuration file or a similar mechanism to store the URL
-    // Example: fs.writeFileSync('config.json', JSON.stringify({ repoUrl: answers.repoUrl }));
+    fs.writeFileSync('config.json', JSON.stringify({ repoUrl: answers.repoUrl }));
   });
 
 program.parse(process.argv);
