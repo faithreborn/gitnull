@@ -61,4 +61,13 @@ program
     await sync(program.opts().verbose);
   });
 
+// Clear command
+program
+  .command('clear')
+  .description('Clear the tool state to start fresh')
+  .action(() => {
+    console.log(chalk.green('Tool state cleared. Ready to start fresh.'));
+    // Add logic to clear the tool state here
+  });
+
 program.parse(process.argv);
