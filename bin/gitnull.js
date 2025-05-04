@@ -84,6 +84,8 @@ program
 
     console.log(chalk.green(`New repository URL set to: ${answers.repoUrl}`));
     // Logic to update the repository configuration with the new URL
+    // Assuming there's a configuration file or a similar mechanism to store the URL
+    // Example: fs.writeFileSync('config.json', JSON.stringify({ repoUrl: answers.repoUrl }));
   });
 
 program.parse(process.argv);
