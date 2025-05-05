@@ -18,7 +18,7 @@ Streamline your Git workflow with an elegant and powerful command-line interface
 ## 📦 Installation
 
 ```bash
-npm install -g gitnull
+npm i gitnull
 ```
 
 ## 🔧 Usage
