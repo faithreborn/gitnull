@@ -1,6 +1,6 @@
 {
   "name": "gitnull",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Professional Git Flow CLI tool for streamlined workflow management",
   "type": "module",
   "bin": {
@@ -22,23 +22,23 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/gitnull.git"
+    "url": "https://github.com/faithreborn/gitnull.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/gitnull/issues"
+    "url": "https://github.com/faithreborn/gitnull/issues"
   },
-  "homepage": "https://github.com/yourusername/gitnull#readme",
+  "homepage": "https://github.com/faithreborn/gitnull#readme",
   "dependencies": {
     "chalk": "^5.4.1",
     "colors": "^1.4.0",
+    "commander": "^13.1.0",
     "figlet": "^1.5.0",
-    "simple-git": "^2.47.0",
-    "inquirer": "^9.1.0"
+    "inquirer": "^9.1.0",
+    "simple-git": "^2.47.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@types/node": "^22.15.3",
-    "commander": "^13.1.0",
     "eslint": "^9.22.0",
     "globals": "^16.0.0",
     "typescript": "~5.7.2",

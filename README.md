@@ -73,7 +73,7 @@ If you find GitNull helpful, please consider giving it a star on GitHub! Your su
 
 ## 📚 Documentation
 
-For detailed documentation and examples, visit our [Documentation](https://github.com/yourusername/gitnull/wiki).
+For detailed documentation and examples, visit our [Documentation](https://github.com/faithreborn/gitnull/wiki).
 
 ## 🔄 Version History
 
