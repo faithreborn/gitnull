@@ -77,7 +77,7 @@ For detailed documentation and examples, visit our [Documentation](https://githu
 
 ## 🔄 Version History
 
-- 1.0.0: Initial release
+- 1.0.2: Initial release
   - Feature branch management
   - Release control
   - Sync operations
@@ -86,7 +86,7 @@ For detailed documentation and examples, visit our [Documentation](https://githu
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gitnull.git
+git clone https://github.com/faithreborn/gitnull.git
 
 # Install dependencies
 npm install
